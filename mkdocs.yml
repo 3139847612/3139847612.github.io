@@ -1,0 +1,24 @@
+# 网站基本信息
+site_name: 我的个人网站
+site_description: 用MkDocs搭建的个人站点
+site_author: 熊熊
+site_url: 
+# 主题配置（使用material主题）
+theme:
+  name: material
+  language: zh  # 中文
+  features:
+    - navigation.tabs  # 顶部标签导航
+    - search.suggest   # 搜索建议
+
+# 导航栏（对应docs下的Markdown文件）
+nav:
+  - 首页: index.md
+  - Markdown简介: Markdown简介.md
+  - 标题: 1分级标题.md
+
+# 额外配置
+markdown_extensions:
+  - toc:
+      permalink: true  # 目录锚点
+  - admonition  # 支持提示框（可选）
